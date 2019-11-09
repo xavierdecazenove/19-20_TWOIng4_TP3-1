@@ -1,22 +1,104 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
+.container{
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+
+
+.nav {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: olive;
+}
+
+.nav button {
+  flex: 0 0 10%;
+  width: 180px;
+  height: 60px;
+  border-color: black;
+  margin: 20px;
+  font-size: calc(10px + 2vmin);
+}
+
+
+
+.main{
+  flex: 0 0 100%;
+  display: flex;
+  flex-flow: column;
+  background-color: cornflowerblue;
+}
+
+.box-profil{
+  display: flex;
+  flex-flow: column;
+  background-color: green;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.box-profil img{
+  margin-left: 35%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.box-profil-description{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: black;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+.box-profil-description a{
+  flex: 0 0 50%;
+  margin-bottom: 5%;
+}
+
+
+.box-profil-style{
+  display: flex;
+  flex-flow: row;
+  flex-direction: row-reverse;
+  background-color: burlywood;
+}
+.box-profil-style button{
+  flex: 0 0 20%;
+  width: 160px;
+  height: 50px;
+  border-color: black;
+  margin: 2%;
+  font-size: calc(10px + 2vmin);
+}
+
+
+
+.box-last-comment{
+  display: flex;
+  flex-flow: column;
+  background-color: brown;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
+}
+
+.box-last-comment a{
+  margin: 2%;
+  font-size: calc(3px + 2vmin);
+}
+
+.box-last-comment button{
+  flex: 0 0 15%;
+  width: 160px;
+  height: 50px;
+  border-color: black;
+  margin: 2%;
+  font-size: calc(10px + 2vmin);
 }
