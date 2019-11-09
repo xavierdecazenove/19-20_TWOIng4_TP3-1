@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 
@@ -14,7 +13,7 @@
   flex: 0 0 100%;
   display: flex;
   flex-direction: row-reverse;
-  background-color: olive;
+  background-color: lightseagreen;
 }
 
 .nav button {
@@ -24,58 +23,59 @@
   border-color: black;
   margin: 20px;
   font-size: calc(10px + 2vmin);
+  background-color: lightsteelblue;
 }
 
 
 
-.main{
+.profile{
   flex: 0 0 100%;
   display: flex;
   flex-flow: column;
-  background-color: cornflowerblue;
+  background-color: lightseagreen;
 }
 
-.box-profil{
+.box-profile{
   display: flex;
   flex-flow: column;
-  background-color: green;
   margin-left: 25%;
   margin-right: 25%;
+  border: solid;
+  background-color: white;
 }
-.box-profil img{
+.box-profile img{
   margin-left: 35%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.box-profil-description{
+.box-profile-description{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  background-color: black;
   padding-top: 5%;
   padding-left: 10%;
 }
-.box-profil-description a{
+.box-profile-description a{
   flex: 0 0 50%;
   margin-bottom: 5%;
 }
 
 
-.box-profil-style{
+.box-profile-style{
   display: flex;
   flex-flow: row;
   flex-direction: row-reverse;
-  background-color: burlywood;
 }
-.box-profil-style button{
+.box-profile-style button{
   flex: 0 0 20%;
   width: 160px;
   height: 50px;
   border-color: black;
   margin: 2%;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
+  background-color: lightsteelblue;
 }
 
 
@@ -83,10 +83,11 @@
 .box-last-comment{
   display: flex;
   flex-flow: column;
-  background-color: brown;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 2%;
+  border: solid;
+  background-color: white;
 }
 
 .box-last-comment a{
@@ -96,9 +97,11 @@
 
 .box-last-comment button{
   flex: 0 0 15%;
-  width: 160px;
+  width: 180px;
   height: 50px;
   border-color: black;
   margin: 2%;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
+  font-style: italic;
+  background-color: lightsteelblue;
 }
