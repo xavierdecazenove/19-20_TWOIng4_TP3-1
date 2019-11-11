@@ -3,69 +3,9 @@ import './App.css';
 import Boby from './img/Boby.png';
 import Camille from './img/Camille.png';
 import Martine from './img/Martine.png';
-
-
-class NavBar extends React.Component {
-    render() {
-        return(
-            <button onClick={this.props.onClick}>
-                {this.props.prenom}
-            </button>
-        );
-    }
-}
-
-class Profile extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            bgColor: ""
-        }
-    }
-
-    handleClick = (e) => {
-        if (this.state.bgColor === "cornflowerblue") {
-            this.setState({
-                bgColor: "white"
-            })
-        } else {
-            this.setState({
-                bgColor: "cornflowerblue"
-            })
-        }
-    }
-
-    render() {
-        return(
-            <div className="box-profile" style={{backgroundColor: this.state.bgColor}}>
-                <img src={this.props.photo} alt="photo_profile"/>
-                <div className="box-profile-description">
-                    <a>{this.props.prenom}</a>
-                    <a>{this.props.nom}</a>
-                    <a>{this.props.date_naissance}</a>
-                </div>
-                <div className="box-profile-style">
-                    <button id="style"
-                            onClick={this.handleClick}>
-                        Change style
-                    </button>
-                </div>
-            </div>
-        );
-    }
-}
-
-class LastComment extends React.Component {
-    render() {
-        return(
-            <div className="box-last-comment">
-                <a>{this.props.lastComment}</a>
-                <button onClick={this.props.onClick}>👍 C'est super ! {this.props.likes}</button>
-            </div>
-        );
-    }
-}
+import LastComment from "./LastComment.js";
+import Profile from "./Profile.js";
+import NavBar from "./Navbar.js";
 
 class Container extends React.Component{
   constructor(props) {
