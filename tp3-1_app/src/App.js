@@ -67,7 +67,7 @@ class Container extends React.Component{
                   onClick={() => this.handleClick(2)}/>
             </nav>
           </header>
-          <div className="profile">
+          <main className="profile">
             <Profile
                 photo={this.state.profile[this.state.show_profile].photo}
                 prenom={this.state.profile[this.state.show_profile].prenom}
@@ -78,7 +78,7 @@ class Container extends React.Component{
                 lastComment={this.state.profile[this.state.show_profile].lastComment}
                 likes={this.state.profile[this.state.show_profile].likes}
                 onClick={() => this.handleClickLikes(this.state.show_profile)}/>
-          </div>
+          </main>
         </body>
     );
   }
