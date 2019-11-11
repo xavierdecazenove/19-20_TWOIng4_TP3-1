@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import Boby from './img/Boby.png';
+import Camille from './img/Camille.png';
+import Martine from './img/Martine.png';
 
 
 class NavBar extends React.Component {
@@ -36,7 +39,7 @@ class Profile extends React.Component {
     render() {
         return(
             <div className="box-profile" style={{backgroundColor: this.state.bgColor}}>
-                <img src="img/Boby.png" alt="photo_profile"/>
+                <img src={this.props.photo} alt="photo_profile"/>
                 <div className="box-profile-description">
                     <a>{this.props.prenom}</a>
                     <a>{this.props.nom}</a>
@@ -70,7 +73,7 @@ class Container extends React.Component{
     this.state = {
       profile : [
         {
-          photo: "/img/Camille.png",
+          photo: Camille,
           prenom: "Camille",
           nom: "DURAND",
           date_naissance: "15/06/1997",
@@ -78,7 +81,7 @@ class Container extends React.Component{
           likes: 0
         },
         {
-          photo: "/img/Martine.png",
+          photo: Martine,
           prenom: "Martine",
           nom: "VA A L'ECOLE",
           date_naissance: "01/03/1997",
@@ -86,7 +89,7 @@ class Container extends React.Component{
           likes: 0
         },
         {
-          photo: "/img/Boby.png",
+          photo: Boby,
           prenom: "Boby",
           nom: "LE BRICOLEUR",
           date_naissance: "21/11/1997",
