@@ -6,7 +6,10 @@ class LastComment extends React.Component {
         return(
             <div className="box-last-comment">
                 <a>{this.props.lastComment}</a>
-                <button onClick={this.props.onClick}>👍 C'est super ! {this.props.likes}</button>
+                <button onClick={this.props.onClick}>
+                    👍 C'est super !
+                    {this.props.likes}
+                </button>
             </div>
         );
     }

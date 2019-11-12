@@ -55,7 +55,9 @@ class Container extends React.Component{
     const profiles = [];
 
     for (const [index, value] of this.state.profile.entries()) {
-      profiles.push(<NavBar prenom={value.prenom} onClick={() => this.handleClick(index)}/>)
+      profiles.push(<NavBar prenom={value.prenom}
+                            onClick={() => this.handleClick(index)}
+      />)
     }
 
     return(
@@ -83,15 +85,3 @@ class Container extends React.Component{
 }
 
 export default Container;
-
-/*<NavBar
-                  prenom={this.state.profile[0].prenom}
-                  onClick={() => this.handleClick(0)}/>
-              <NavBar
-                  prenom={this.state.profile[1].prenom}
-                  onClick={() => this.handleClick(1)}/>
-              <NavBar
-                  prenom={this.state.profile[2].prenom}
-                  onClick={() => this.handleClick(2)}/>
-
-                  */

@@ -23,8 +23,10 @@ class Profile extends React.Component {
 
     render() {
         return(
-            <div className="box-profile" style={{backgroundColor: this.state.bgColor}}>
-                <img src={this.props.photo} alt="photo_profile"/>
+            <div className="box-profile"
+                 style={{backgroundColor: this.state.bgColor}}>
+                <img src={this.props.photo}
+                     alt="photo-profile"/>
                 <div className="box-profile-description">
                     <a>{this.props.prenom}</a>
                     <a>{this.props.nom}</a>
